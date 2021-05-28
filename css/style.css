@@ -1,0 +1,373 @@
+/* =====================================
+    Template Name: Mission || PSD TO Bootstarp
+    Author: Kawser_sk
+    Version: !.0.0
+    Created: 22-5-2021
+    File Descrciption: Main file of the Template
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+/*************** Varibale ****************/
+:root{
+  --primary: #ff5722;
+  --secondary: #1c1c1c;
+  --text: #909090;
+  --black: #000;
+  --white: #fff;
+  --primary-font:'Raleway', sans-serif;
+  --heading-font: 36px;
+  --text-font: 14px;
+
+}
+
+body{
+  font-family: var(--primary-font);
+  font-size: var(--text-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  color: #1c1c1c;
+  
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #1c1c1c;
+  font-weight: 600;
+  
+}
+p{
+  /* font-family: 'Open Sans', sans-serif; */
+  
+  font-size: 14px;
+  font-weight: 400;
+  color: #909090;
+}
+
+/********** Header **********/
+
+header {
+  border-bottom: 2px solid #363636;
+  padding: 15px 0;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  /* margin: 0 18px; */
+  margin-left: 18px;
+}
+
+.navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -24px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover {
+  color: #ff5722;
+}
+
+.navbar-nav .nav-item:hover::after {
+  background: #ff5722;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff5722 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+}
+
+.main-menu{
+  transition-duration: 0.3s;
+}
+  .menuColor{
+  background-color:rgba(0, 0, 0, 0.925)!important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/******************* Banner ****************/
+
+ .carousel-caption {
+  bottom: 50%;
+  -webkit-transform: translate(0, 60%);
+          transform: translate(0, 60%);
+}
+
+
+ .carousel-caption h1 {
+  font-size: 62px;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ .carousel-caption p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px !important;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 26px;
+}
+
+ .banner-btn {
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 185px;
+  height: 52px;
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 80px;
+  border-radius: 0;
+}
+
+
+.carousel-caption .banner-btn:hover {
+  background: #ff5722;
+  border-color: #ff5722;
+  color: #fff;
+}
+
+
+
+.next-icon {
+  background: #ff5722;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+}
+
+.preview-icon {
+  background: #ff5722;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+}
+
+.about-section {
+  padding: 100px 0;
+}
+
+ .heading {
+  width: 490px;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+ .line {
+  height: 4px;
+  background: #ff5722;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.heading p {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 18px;
+}
+
+.about-section .about-img {
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #ff5722;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+/************* COUNTER UP **********/
+
+#counter {
+	background-color: #000000;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/counter-bg.jpg);
+  background-position:top center;
+	background-size: cover;
+  background-repeat: no-repeat;
+	color: var(--white);
+  padding: 100px 0;
+	text-align: center;
+}
+
+.counter-item span i{
+  color: var(--primary);
+  font-size: 30px;
+}
+.counter-item h5{
+  margin: 10px 0;
+  font-size: 20px;
+  position: relative;
+}
+.counter-item h5::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: var(--primary);
+  bottom: -13px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.counter-item span{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+/************ service-section **********/
+
+.service-section{
+  padding: 100px 0 40px 0;
+}
+.services-item {
+  margin-bottom: 60px;
+}
+.services-item i{
+  font-size: 36px;
+  color: var(--primary);
+}
+.services-item h3{
+  position: relative;
+  padding: 17px 0 12px 0;
+}
+.services-item h3::after{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: var(--primary);
+  left: 0;
+  bottom: 0;
+}
+
+
+/************ PROGRESS-BAR**********/
+#progressbar{
+  background-color: #000000;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/progress-bg.jpg);
+  background-position:top center;
+	background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+	text-align: center;
+}
+
+.progress-item{
+  color: #fff !important;
+}
+.progress-item h4{
+  margin-top: 10px;
+}
+
+/********* Team-Section *************/
+
+.team-section{
+  padding: 100px 0;
+}
+.team-item{
+  position: relative;
+}
+.team-item .team-img img{
+  object-fit: cover;
+  width: 100%;
+}
+.team-item::before {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: .4s;
+  opacity: 0;
+}
+.team-item:hover:before {
+  opacity: .6;
+}
+.team-item:hover .team-content {
+  top: 50%;
+  opacity: 1;
+}
+.team-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .6s;
+  text-align: center;
+}
+
+.team-content h5 {
+  position: relative;
+  padding: 8px 0;
+  color: var(--white);
+}
+.team-content h5::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: var(--white);
+  bottom: -9%;
+  left: 39%;
+}
+.team-content li {
+  margin: 35px 10px 0;
+
+}
+.team-content a i {
+  color: var(--white);
+}
+.team-content a i:hover {
+  color: var(--primary);
+}
+.team-content span {
+  color: var(--white);
+  padding-top: 5px;
+  display: block;
+
+}
